@@ -1,0 +1,172 @@
+/* -------------------------MAIN SETTINGS---------------------------------- */
+
+:root {
+  --navy-blue: #2e2f42;
+  --white-color: #fff;
+  --cloud-color: #f4f4fd;
+  --blue-color: #4d5ae5;
+  --slate-color: #434455;
+  --cornflower-color: #e7e9fc;
+  --green-color: #31d0aa;
+  --light-slate-color: #8e8f99;
+}
+body {
+  /* margin: 0;
+  padding: 0; */
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--navy-blue);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+li {
+  list-style: none;
+}
+/* -------------------------SECTIONS---------------------------------- */
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.header,
+.features,
+.doing,
+.cards {
+  background-color: var(--white-color);
+}
+.head {
+  background-color: var(--navy-blue);
+  color: var(--cloud-color);
+}
+
+.team {
+  background-color: var(--cornflower-color);
+  text-align: center;
+}
+.footer {
+  background-color: var(--slate-color);
+}
+/* -------------------------BUTTONS--------------------------------- */
+
+.btn {
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  background-color: var(--cloud-color);
+  color: var(--blue-color);
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--blue-color);
+  color: var(--cloud-color);
+}
+.btn.backward {
+  font-weight: 600;
+  line-height: 1.19;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--blue-color);
+  border-radius: 4px;
+}
+.btn.backward:hover,
+.btn.backward:focus {
+  background-color: var(--cloud-color);
+  color: var(--blue-color);
+  border: 1px solid var(--cloud-color);
+}
+/* -------------------------h1/h2/h3---------------------------------- */
+
+.title {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.subsubtitle {
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 20px;
+}
+/* -------------------------p/link/nav/hover:focus---------------------------------- */
+
+.description,
+.link.description {
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
+}
+.link.description {
+  font-weight: normal;
+}
+.link {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--navy-blue);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus,
+.link.nav:hover,
+.link.nav:focus,
+.link.footer:hover,
+.link.footer:focus,
+.link.logo:hover,
+.link.logo:focus {
+  color: var(--blue-color);
+}
+.link.nav {
+  color: var(--navy-blue);
+}
+/* .link.footer.web:hover,
+.link.footer.web:focus {
+  background-color: var(--white-color);
+} */
+/* -------------------------FEATURES---------------------------------- */
+
+.description.footer,
+.link.footer {
+  color: var(--cornflower-color);
+}
+.link.logo {
+  color: var(--navy-blue);
+}
+.web {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--blue-color);
+}
+.hidden {
+  display: none;
+}
+.description.add {
+  color: var(--cloud-color);
+}
+.description.footer.no-psevdo {
+  color: var(--cloud-color);
+}
+/* -------------------------CARDs---------------------------------- */
+
+.person {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white-color);
+}
+.card {
+  border: 0.5px solid var(--cloud-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
