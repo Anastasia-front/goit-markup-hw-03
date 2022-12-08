@@ -9,16 +9,22 @@
   --cornflower-color: #e7e9fc;
   --green-color: #31d0aa;
   --light-slate-color: #8e8f99;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --letter-spacing: 0.02rem;
+  --line-height: 1.5;
+  --semibold-weight: 600;
 }
 body {
   /* margin: 0;
   padding: 0; */
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   font-weight: normal;
   color: var(--navy-blue);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  background-color: var(--white-color);
 }
 li {
   list-style: none;
@@ -28,13 +34,7 @@ li {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.header,
-.features,
-.doing,
-.cards {
-  background-color: var(--white-color);
-}
-.head {
+.hero {
   background-color: var(--navy-blue);
   color: var(--cloud-color);
 }
@@ -52,7 +52,7 @@ li {
   align-items: center;
   cursor: pointer;
   letter-spacing: 0.04em;
-  font-weight: 600;
+  font-weight: var(--semibold-weight);
   background-color: var(--cloud-color);
   color: var(--blue-color);
   border: 1px solid var(--cornflower-color);
@@ -65,7 +65,7 @@ li {
   color: var(--cloud-color);
 }
 .btn.backward {
-  font-weight: 600;
+  font-weight: var(--semibold-weight);
   line-height: 1.19;
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -83,74 +83,68 @@ li {
 
 .title {
   color: var(--white-color);
-  font-weight: 600;
+  font-weight: var(--semibold-weight);
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
 }
 .subtitle {
-  font-weight: 600;
+  font-weight: var(--semibold-weight);
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
 }
-.subsubtitle {
+.crosstitle {
   line-height: 1.2;
-  font-weight: 600;
   font-size: 20px;
+  font-weight: var(--semibold-weight);
 }
 /* -------------------------p/link/nav/hover:focus---------------------------------- */
 
 .description,
 .link.description {
-  letter-spacing: 0.02em;
   color: var(--slate-color);
 }
 .link.description {
   font-weight: normal;
 }
 .link {
-  text-decoration: underline;
-  font-weight: 600;
+  font-weight: var(--semibold-weight);
   color: var(--navy-blue);
   text-decoration: none;
 }
 .link:hover,
-.link:focus,
-.link.nav:hover,
-.link.nav:focus,
-.link.footer:hover,
-.link.footer:focus,
-.link.logo:hover,
-.link.logo:focus {
+.link:focus {
   color: var(--blue-color);
 }
 .link.nav {
   color: var(--navy-blue);
 }
-/* .link.footer.web:hover,
-.link.footer.web:focus {
-  background-color: var(--white-color);
-} */
 /* -------------------------FEATURES---------------------------------- */
 
-.description.footer,
-.link.footer {
-  color: var(--cornflower-color);
-}
-.link.logo {
-  color: var(--navy-blue);
-}
 .web {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--second-font);
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--blue-color);
 }
-.hidden {
-  display: none;
+.logo {
+  color: var(--navy-blue);
+}
+.footer {
+  color: var(--cornflower-color);
+}
+.secret-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .description.add {
   color: var(--cloud-color);
@@ -166,7 +160,7 @@ li {
   border-radius: 0px 0px 4px 4px;
   background: var(--white-color);
 }
-.card {
+.card-item {
   border: 0.5px solid var(--cloud-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
