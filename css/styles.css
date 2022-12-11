@@ -32,6 +32,7 @@ a {
 }
 img {
   display: block;
+  margin: 0;
 }
 h1,
 h2,
@@ -193,7 +194,7 @@ ul {
   background: var(--white-color);
 }
 .card-item {
-  border: 0.5px solid var(--cloud-color);
+  border-bottom: 0.5px solid var(--cloud-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* -------------------------MARGINS/PADDINGS/WIDTH/HEIGHT---------------------------------- */
@@ -268,6 +269,9 @@ ul {
 /* -------------------------PORTFOLIO.HTML---------------------------------- */
 .section-portfolio {
   padding: 96px 0 120px 0;
+}
+.container-card-item {
+  margin: 32px 16px;
 }
 .card-items {
   display: flex;
